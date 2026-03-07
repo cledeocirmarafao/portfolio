@@ -1,0 +1,138 @@
+{
+  "nav": {
+    "home": "Início",
+    "projects": "Projetos",
+    "skills": "Skills",
+    "about": "Sobre",
+    "contact": "Contato"
+  },
+  "hero": {
+    "role": "Fullstack Developer",
+    "headline1": "Criando",
+    "headline2": "experiências",
+    "headline3": "digitais que",
+    "headline4": "importam",
+    "tagline1": "Transformando café em código desde 2024 ☕→💻",
+    "tagline2": "Especializado em React, Node.js e TypeScript para criar soluções web modernas e escaláveis.",
+    "cta_projects": "Ver Projetos",
+    "cta_cv": "Download CV",
+    "stat_repos": "Repositórios",
+    "stat_contributions": "Contribuições",
+    "stat_years": "Anos de GitHub",
+    "scroll": "Scroll para descobrir",
+    "code_file": "developer.ts"
+  },
+  "projects": {
+    "comment": "// Meu trabalho",
+    "title1": "Projetos em",
+    "title2": "Destaque",
+    "live_demo": "Live Demo",
+    "view_code": "Ver Código",
+    "items": [
+      {
+        "title": "Task Manager Pro",
+        "category": "Dashboard",
+        "description": "Sistema completo de gerenciamento de tarefas com autenticação JWT, drag-and-drop e notificações em tempo real."
+      },
+      {
+        "title": "E-commerce Platform",
+        "category": "E-commerce",
+        "description": "Plataforma de e-commerce com carrinho, pagamentos Stripe e painel administrativo completo."
+      },
+      {
+        "title": "Analytics Dashboard",
+        "category": "Analytics",
+        "description": "Dashboard de analytics com gráficos interativos, filtros avançados e exportação de relatórios."
+      },
+      {
+        "title": "Real-time Chat",
+        "category": "Social",
+        "description": "Aplicação de chat em tempo real com WebSockets, grupos, menções e compartilhamento de arquivos."
+      }
+    ]
+  },
+  "skills": {
+    "comment": "// Habilidades",
+    "title1": "Tecnologias que",
+    "title2": "Domino",
+    "hint": "< Passe o mouse para explorar >"
+  },
+  "about": {
+    "comment": "// Quem sou eu",
+    "title1": "Sobre",
+    "title2": "Mim",
+    "photo_alt": "Foto de perfil",
+    "badge_role": "Fullstack Jr",
+    "badge_open": "Open to Work",
+    "badge_location": "Floripa 🏝️",
+    "p1": "Desenvolvedor <1>fullstack júnior</1> apaixonado por criar interfaces elegantes e APIs robustas. Minha jornada começou com a curiosidade de entender como a web funciona.",
+    "p2": "Especializado em <1>React</1> e <1>Node.js</1>, sempre buscando a combinação perfeita entre design e performance. Acredito que bom código é código que resolve problemas reais.",
+    "p3": "Atualmente focado em aprofundar conhecimentos em arquitetura de software e práticas de DevOps. Disponível para projetos freelance e oportunidades full-time em <1>Florianópolis</1>.",
+    "timeline_title": "Trajetória",
+    "timeline": [
+      { "year": "2024", "title": "Fullstack Developer Jr", "description": "Início da jornada profissional em desenvolvimento web" },
+      { "year": "2023", "title": "Bootcamp Fullstack", "description": "Formação intensiva em desenvolvimento web moderno" },
+      { "year": "2022", "title": "Primeiros Projetos", "description": "Primeiros contatos com programação e lógica" }
+    ],
+    "contributions": "contribuições",
+    "contributions_period": "nos últimos 6 meses"
+  },
+  "contact": {
+    "comment": "// Entre em contato",
+    "title1": "Vamos",
+    "title2": "Trabalhar",
+    "title3": "Juntos?",
+    "subtitle": "Tem um projeto em mente ou quer conversar sobre oportunidades? Ficarei feliz em ouvir de você!",
+    "label_name": "Nome",
+    "placeholder_name": "Seu nome",
+    "label_email": "Email",
+    "placeholder_email": "seu@email.com",
+    "label_message": "Mensagem",
+    "placeholder_message": "Conte-me sobre seu projeto...",
+    "submit": "Enviar Mensagem",
+    "toast_title": "Mensagem enviada! 🎉",
+    "toast_description": "Obrigado pelo contato. Retornarei em breve!",
+    "location": "Localização",
+    "location_city": "Florianópolis, SC",
+    "location_country": "Brasil"
+  },
+  "footer": {
+    "description1": "Desenvolvedor Fullstack Jr.",
+    "description2": "Criando experiências digitais.",
+    "location": "📍 Florianópolis, Brasil 🇧🇷",
+    "quick_links": "Links Rápidos",
+    "social": "Social",
+    "copyright": "© 2026 Fullstack Dev. Feito com",
+    "and": "e",
+    "in_floripa": "em Floripa."
+  },
+  "chatbot": {
+    "open_chat": "Abrir chat",
+    "tooltip": "Dúvidas? Pergunte para minha IA!",
+    "title": "Assistente Virtual",
+    "online": "Online",
+    "placeholder": "Digite sua mensagem...",
+    "welcome": "Olá! Sou o assistente virtual do portfólio. Fui treinado com o histórico profissional dele para te ajudar. Como posso te auxiliar hoje?",
+    "quick_skills": "Quais suas Skills?",
+    "quick_projects": "Ver Projetos",
+    "quick_location": "Onde você mora?",
+    "quick_cv": "Baixar CV",
+    "reply_skills": "As principais skills incluem: React, TypeScript, Node.js, Tailwind CSS, Three.js, FastAPI, Vite, Jest/Vitest, n8n, Axios e React Router. Quer saber mais sobre alguma delas?",
+    "reply_projects": "Você pode conferir os projetos na seção \"Projetos\" logo acima! Role a página ou clique em \"Ver Projetos\" no menu.",
+    "reply_location": "Atualmente baseado no Brasil. Aberto a oportunidades remotas e presenciais!",
+    "reply_cv": "O download do CV estará disponível em breve! Enquanto isso, explore o portfólio para conhecer meu trabalho.",
+    "reply_default": "Obrigado pela mensagem! Posso ajudar com informações sobre skills, projetos, localização ou CV. O que gostaria de saber?"
+  },
+  "intro": {
+    "stage1": "Inicializando portfólio...",
+    "stage2": "Carregando assets...",
+    "stage3": "Bem-vindo"
+  },
+  "github": {
+    "months": ["Jan", "Fev", "Mar", "Abr", "Mai", "Jun", "Jul", "Ago", "Set", "Out", "Nov", "Dez"],
+    "days": ["", "Seg", "", "Qua", "", "Sex", ""],
+    "less": "Menos",
+    "more": "Mais",
+    "contributions_on": "contribuições"
+  }
+}
