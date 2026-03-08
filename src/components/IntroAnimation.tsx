@@ -6,7 +6,7 @@ interface IntroAnimationProps {
   onComplete: () => void;
 }
 
-export default function IntroAnimation({ onComplete }: IntroAnimationProps) {
+export const IntroAnimation = ({ onComplete }: IntroAnimationProps) => {
   const { t } = useTranslation();
   const stages = [
     { text: t("intro.stage1"), duration: 1200 },
@@ -106,9 +106,10 @@ export default function IntroAnimation({ onComplete }: IntroAnimationProps) {
                 exit={{ opacity: 0, y: -20 }}
                 transition={{ duration: 0.3 }}
                 className="text-muted-foreground font-mono text-[clamp(0.8rem,3vw,1.1rem)]"
+                data-testid="terminal-stage"
               >
                 <span className="text-primary">{">"}</span>{" "}
-                {stages[currentStage].text}
+                <span data-testid="terminal-text">{stages[currentStage].text}</span>
                 <span className="cursor-blink"> |</span>
               </motion.div>
             )}
@@ -118,6 +119,7 @@ export default function IntroAnimation({ onComplete }: IntroAnimationProps) {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.5 }}
+            data-testid="progress-bar"
           >
             <motion.div
               className="h-full bg-cyber-gradient"
@@ -126,12 +128,24 @@ export default function IntroAnimation({ onComplete }: IntroAnimationProps) {
               transition={{ duration: 3.5, ease: "easeInOut" }}
             />
           </motion.div>
-          <div className="absolute top-8 left-8 w-16 h-16 border-l-2 border-t-2 border-primary/50" />
-          <div className="absolute top-8 right-8 w-16 h-16 border-r-2 border-t-2 border-secondary/50" />
-          <div className="absolute bottom-8 left-8 w-16 h-16 border-l-2 border-b-2 border-secondary/50" />
-          <div className="absolute bottom-8 right-8 w-16 h-16 border-r-2 border-b-2 border-primary/50" />
+          <div
+            data-testid="corner-decoration"
+            className="absolute top-8 left-8 w-16 h-16 border-l-2 border-t-2 border-primary/50"
+          />
+          <div
+            data-testid="corner-decoration"
+            className="absolute top-8 right-8 w-16 h-16 border-r-2 border-t-2 border-secondary/50"
+          />
+          <div
+            data-testid="corner-decoration"
+            className="absolute bottom-8 left-8 w-16 h-16 border-l-2 border-b-2 border-secondary/50"
+          />
+          <div
+            data-testid="corner-decoration"
+            className="absolute bottom-8 right-8 w-16 h-16 border-r-2 border-b-2 border-primary/50"
+          />
         </motion.div>
       )}
     </AnimatePresence>
   );
-}
+};
