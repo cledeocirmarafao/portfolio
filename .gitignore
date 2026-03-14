@@ -28,3 +28,6 @@ dist-ssr
 .env.production.local
 
 *.tsbuildinfo
+
+vitest.results.json
+**/results.json
