@@ -1,8 +1,6 @@
 import { describe, it, expect, vi, beforeEach, afterEach } from "vitest";
 import { render, screen, fireEvent } from "@testing-library/react";
 import { Navigation } from "./Navigation";
-import { useTranslation } from "react-i18next";
-// import type { UseTranslationResponse } from "react-i18next";
 
 vi.mock("react-i18next", () => ({
   useTranslation: () => ({
