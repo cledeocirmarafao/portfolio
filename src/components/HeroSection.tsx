@@ -16,6 +16,7 @@ export const HeroSection = () => {
 
   return (
     <section
+      data-testid="hero-section"
       id="hero"
       className="relative min-h-screen flex items-center overflow-hidden max-w-full pt-20 sm:pt-0 lg:pt-0"
     >
@@ -27,6 +28,7 @@ export const HeroSection = () => {
         <div className="grid lg:grid-cols-5 gap-12 items-center">
           <div className="lg:col-span-3 space-y-8">
             <motion.div
+              data-testid="hero-role-badge"
               initial={{ opacity: 0, x: -50 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.6 }}
@@ -39,6 +41,7 @@ export const HeroSection = () => {
             </motion.div>
 
             <motion.h1
+              data-testid="hero-heading"
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
@@ -60,6 +63,7 @@ export const HeroSection = () => {
             </motion.h1>
 
             <motion.p
+              data-testid="hero-tagline"
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.6 }}
@@ -77,6 +81,7 @@ export const HeroSection = () => {
               className="flex flex-col sm:flex-row gap-3 sm:gap-4"
             >
               <Button
+                data-testid="hero-cta-projects"
                 size={"lg"}
                 className="bg-cyber-gradient hover:opacity-90 text-primary-foreground font-semibold group cursor-pointer text-sm sm:text-base max-sm:h-7"
                 onClick={handleScrollToProjects}
@@ -85,6 +90,7 @@ export const HeroSection = () => {
                 <ExternalLink className="ml-2 w-3.5 h-3.5 sm:w-4 sm:h-4 group-hover:translate-x-1 transition-transform" />
               </Button>
               <Button
+                data-testid="hero-cta-cv"
                 size={"lg"}
                 variant={"outline"}
                 className="border-primary/50 text-primary hover:bg-primary/10 group cursor-pointer text-sm sm:text-base max-sm:h-7"
@@ -100,6 +106,7 @@ export const HeroSection = () => {
             <ScrollIndicator className="flex sm:hidden" />
 
             <motion.div
+              data-testid="hero-stats"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 0.8, delay: 0.8 }}
@@ -129,11 +136,12 @@ export const HeroSection = () => {
           </div>
 
           <motion.div
+            data-testid="hero-code-card"
             initial={{ opacity: 0, x: 50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
             className="lg:col-span-2 hidden lg:block perspective-midrange"
-          >
+           >
             <motion.div
               className="glass rounded-2xl p-6 border-glow"
               onMouseMove={(e) => {
