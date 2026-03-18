@@ -149,11 +149,9 @@ export const HeroSection = () => {
                 const x = (e.clientX - rect.left) / rect.width - 0.5;
                 const y = (e.clientY - rect.top) / rect.height - 0.5;
                 e.currentTarget.style.transform = `rotateY(${x * 20}deg) rotateX(${-y * 20}deg)`;
-                e.currentTarget.style.boxShadow = `${-x * 30}px ${y * 30}px 40px hsl(var(--cyan) / 0.2), 0 0 15px hsl(var(--cyan) / 0.3), inset 0 0 15px hsl(var(--cyan) / 0.1)`;
               }}
               onMouseLeave={(e) => {
                 e.currentTarget.style.transform = "rotateY(0deg) rotateX(0deg)";
-                e.currentTarget.style.boxShadow = "";
               }}
               style={{
                 transition: "transform 0.3s ease-out, box-shadow 0.3s ease-out",
