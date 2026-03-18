@@ -8,12 +8,12 @@
   },
   "hero": {
     "role": "Fullstack Developer",
-    "headline1": "Criando",
-    "headline2": "experiências",
-    "headline3": "digitais que",
-    "headline4": "importam",
-    "tagline1": "Transformando café em código desde 2024 ☕→💻",
-    "tagline2": "Especializado em React, Node.js e TypeScript para criar soluções web modernas e escaláveis.",
+    "headline1": "Código limpo,",
+    "headline2": "interfaces",
+    "headline3": "que ficam na",
+    "headline4": "memória",
+    "tagline1": "Café virou código, código virou produto ☕→💻",
+    "tagline2": "Construo interfaces rápidas e acessíveis com React, Node.js e TypeScript, do design ao deploy.",
     "cta_projects": "Ver Projetos",
     "cta_cv": "Download CV",
     "stat_repos": "Repositórios",
@@ -70,9 +70,21 @@
     "p3": "Atualmente focado em aprofundar conhecimentos em arquitetura de software e práticas de DevOps. Disponível para projetos freelance e oportunidades full-time em <1>Florianópolis</1>.",
     "timeline_title": "Trajetória",
     "timeline": [
-      { "year": "2024", "title": "Fullstack Developer Jr", "description": "Início da jornada profissional em desenvolvimento web" },
-      { "year": "2023", "title": "Bootcamp Fullstack", "description": "Formação intensiva em desenvolvimento web moderno" },
-      { "year": "2022", "title": "Primeiros Projetos", "description": "Primeiros contatos com programação e lógica" }
+      {
+        "year": "2024",
+        "title": "Fullstack Developer Jr",
+        "description": "Início da jornada profissional em desenvolvimento web"
+      },
+      {
+        "year": "2023",
+        "title": "Bootcamp Fullstack",
+        "description": "Formação intensiva em desenvolvimento web moderno"
+      },
+      {
+        "year": "2022",
+        "title": "Primeiros Projetos",
+        "description": "Primeiros contatos com programação e lógica"
+      }
     ],
     "contributions": "contribuições",
     "contributions_period": "nos últimos 6 meses"
@@ -129,7 +141,20 @@
     "stage3": "Bem-vindo"
   },
   "github": {
-    "months": ["Jan", "Fev", "Mar", "Abr", "Mai", "Jun", "Jul", "Ago", "Set", "Out", "Nov", "Dez"],
+    "months": [
+      "Jan",
+      "Fev",
+      "Mar",
+      "Abr",
+      "Mai",
+      "Jun",
+      "Jul",
+      "Ago",
+      "Set",
+      "Out",
+      "Nov",
+      "Dez"
+    ],
     "days": ["", "Seg", "", "Qua", "", "Sex", ""],
     "less": "Menos",
     "more": "Mais",

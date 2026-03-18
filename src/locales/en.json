@@ -8,12 +8,12 @@
   },
   "hero": {
     "role": "Fullstack Developer",
-    "headline1": "Creating",
-    "headline2": "experiences",
-    "headline3": "digital that",
-    "headline4": "matter",
-    "tagline1": "Turning coffee into code since 2024 ☕→💻",
-    "tagline2": "Specialized in React, Node.js and TypeScript to build modern and scalable web solutions.",
+    "headline1": "Clean code,",
+    "headline2": "interfaces",
+    "headline3": "that stick in",
+    "headline4": "memory",
+    "tagline1": "Coffee turned into code, code turned into product ☕→💻",
+    "tagline2": "I build fast and accessible interfaces with React, Node.js and TypeScript, from design to deploy.",
     "cta_projects": "View Projects",
     "cta_cv": "Download CV",
     "stat_repos": "Repositories",
@@ -70,9 +70,21 @@
     "p3": "Currently focused on deepening knowledge in software architecture and DevOps practices. Available for freelance projects and full-time opportunities in <1>Florianópolis</1>.",
     "timeline_title": "Journey",
     "timeline": [
-      { "year": "2024", "title": "Fullstack Developer Jr", "description": "Start of professional journey in web development" },
-      { "year": "2023", "title": "Fullstack Bootcamp", "description": "Intensive training in modern web development" },
-      { "year": "2022", "title": "First Projects", "description": "First contacts with programming and logic" }
+      {
+        "year": "2024",
+        "title": "Fullstack Developer Jr",
+        "description": "Start of professional journey in web development"
+      },
+      {
+        "year": "2023",
+        "title": "Fullstack Bootcamp",
+        "description": "Intensive training in modern web development"
+      },
+      {
+        "year": "2022",
+        "title": "First Projects",
+        "description": "First contacts with programming and logic"
+      }
     ],
     "contributions": "contributions",
     "contributions_period": "in the last 6 months"
@@ -129,7 +141,20 @@
     "stage3": "Welcome"
   },
   "github": {
-    "months": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+    "months": [
+      "Jan",
+      "Feb",
+      "Mar",
+      "Apr",
+      "May",
+      "Jun",
+      "Jul",
+      "Aug",
+      "Sep",
+      "Oct",
+      "Nov",
+      "Dec"
+    ],
     "days": ["", "Mon", "", "Wed", "", "Fri", ""],
     "less": "Less",
     "more": "More",
