@@ -96,7 +96,7 @@ export const HeroSection = () => {
                 className="border-primary/50 text-primary hover:bg-primary/10 group cursor-pointer text-sm sm:text-base max-sm:h-7"
                 asChild
               >
-                <a href="/public/assets/curriculum.pdf" download>
+                <a href="/public/curriculum.pdf" download>
                   {t("hero.cta_cv")}
                   <Download className="ml-2 w-3.5 h-3.5 sm:w-4 sm:h-4 group-hover:translate-y-1 transition-transform" />
                 </a>
