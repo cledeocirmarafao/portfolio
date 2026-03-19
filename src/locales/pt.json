@@ -30,27 +30,27 @@
     "view_code": "Ver Código",
     "items": [
       {
-        "title": "Task Manager Pro",
-        "category": "Dashboard",
-        "description": "Sistema completo de gerenciamento de tarefas com autenticação JWT, drag-and-drop e notificações em tempo real."
+        "title": "Animated Background",
+        "category": "IA & Automação",
+        "description": "Gerador de fundos dinâmicos usando Google Gemini e n8n para transformar descrições em código CSS puro."
       },
       {
-        "title": "E-commerce Platform",
-        "category": "E-commerce",
-        "description": "Plataforma de e-commerce com carrinho, pagamentos Stripe e painel administrativo completo."
+        "title": "Pokédex",
+        "category": "Web App",
+        "description": "Explorador de Pokémon com busca em tempo real, filtros avançados e uma interface moderna totalmente responsiva."
       },
       {
-        "title": "Analytics Dashboard",
-        "category": "Analytics",
-        "description": "Dashboard de analytics com gráficos interativos, filtros avançados e exportação de relatórios."
+        "title": "CineAI",
+        "category": "IA & Entretenimento",
+        "description": "Assistente inteligente que recomenda filmes baseados no seu humor, integrado com a API do TMDB e fluxos n8n."
       },
       {
-        "title": "Real-time Chat",
-        "category": "Social",
-        "description": "Aplicação de chat em tempo real com WebSockets, grupos, menções e compartilhamento de arquivos."
+        "title": "LoveCats",
+        "category": "Colaborativo",
+        "description": "Plataforma para adoção de gatos desenvolvida em equipe, focada em facilitar o encontro entre pets e novos lares."
       }
     ]
-  },
+},
   "skills": {
     "comment": "// Habilidades",
     "title1": "Tecnologias que",

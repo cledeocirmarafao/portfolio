@@ -30,27 +30,27 @@
     "view_code": "View Code",
     "items": [
       {
-        "title": "Task Manager Pro",
-        "category": "Dashboard",
-        "description": "Complete task management system with JWT authentication, drag-and-drop and real-time notifications."
+        "title": "Animated Background",
+        "category": "AI & Automation",
+        "description": "Dynamic background generator using Google Gemini and n8n to transform descriptions into pure CSS code."
       },
       {
-        "title": "E-commerce Platform",
-        "category": "E-commerce",
-        "description": "E-commerce platform with shopping cart, Stripe payments and complete admin panel."
+        "title": "Pokédex",
+        "category": "Web App",
+        "description": "Pokémon explorer featuring real-time search, advanced filtering, and a modern, fully responsive interface."
       },
       {
-        "title": "Analytics Dashboard",
-        "category": "Analytics",
-        "description": "Analytics dashboard with interactive charts, advanced filters and report export."
+        "title": "CineAI",
+        "category": "AI & Entertainment",
+        "description": "Smart assistant that recommends movies based on your mood, integrated with TMDB API and n8n workflows."
       },
       {
-        "title": "Real-time Chat",
-        "category": "Social",
-        "description": "Real-time chat application with WebSockets, groups, mentions and file sharing."
+        "title": "LoveCats",
+        "category": "Collaborative",
+        "description": "Team-developed cat adoption platform focused on connecting pets with their forever homes."
       }
     ]
-  },
+},
   "skills": {
     "comment": "// Skills",
     "title1": "Technologies I",
