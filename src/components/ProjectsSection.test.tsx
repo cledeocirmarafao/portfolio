@@ -1,5 +1,5 @@
 import { describe, it, expect, vi } from "vitest";
-import { getByTestId, render, screen } from "@testing-library/react";
+import { render, screen } from "@testing-library/react";
 import { ProjectsSection } from "./ProjectsSection";
 
 vi.mock("react-i18next", () => ({
