@@ -53,10 +53,30 @@
     ]
 },
   "skills": {
-    "comment": "// Skills",
-    "title1": "Technologies I",
-    "title2": "Master",
+    "comment": "//Hard Skills",
+    "title1": "Technical",
+    "title2": "Arsenal",
     "hint": "< Hover to explore >"
+  },
+   "soft_skills": {
+    "comment": "// Soft Skills",
+    "title1": "Interpersonal",
+    "title2": "Skills",
+    "hint": "< Hover to explore >",
+    "items": {
+      "communication": "Communication",
+      "teamwork": "Teamwork",
+      "problem_solving": "Problem Solving",
+      "continuous_learning": "Continuous Learning",
+      "attention_detail": "Attention to Detail",
+      "autonomy": "Autonomy",
+      "adaptability": "Adaptability",
+      "proactivity": "Proactivity",
+      "critical_thinking": "Critical Thinking",
+      "delivery_focus": "Delivery Focus",
+      "resilience": "Resilience",
+      "product_vision": "Product Vision"
+    }
   },
   "about": {
     "comment": "// Who am I",

@@ -51,12 +51,32 @@
         "description": "Plataforma para adoção de gatos desenvolvida em equipe, focada em facilitar o encontro entre pets e novos lares."
       }
     ]
-},
+  },
   "skills": {
-    "comment": "// Habilidades",
-    "title1": "Tecnologias que",
-    "title2": "Domino",
+    "comment": "// Habilidades Técnicas",
+    "title1": "Arsenal",
+    "title2": "Técnico",
     "hint": "< Passe o mouse para explorar >"
+  },
+  "soft_skills": {
+    "comment": "// Soft Skills",
+    "title1": "Habilidades",
+    "title2": "Interpessoais",
+    "hint": "< Passe o mouse para explorar >",
+    "items": {
+      "communication": "Comunicação",
+      "teamwork": "Trabalho em equipe",
+      "problem_solving": "Resolução de problemas",
+      "continuous_learning": "Aprendizado contínuo",
+      "attention_detail": "Atenção a detalhes",
+      "autonomy": "Autonomia",
+      "adaptability": "Adaptabilidade",
+      "proactivity": "Proatividade",
+      "critical_thinking": "Pensamento crítico",
+      "delivery_focus": "Foco em entrega",
+      "resilience": "Resiliência",
+      "product_vision": "Visão de produto"
+    }
   },
   "about": {
     "comment": "// Quem sou eu",
