@@ -14,9 +14,9 @@ import {
   SiTestinglibrary,
   SiFastapi,
   SiThreedotjs,
+  SiN8N,
 } from "react-icons/si";
 import { FaCss3Alt } from "react-icons/fa6";
-import { Workflow } from "lucide-react";
 
 const technologies = [
   { name: "JavaScript", icon: SiJavascript, color: "#F7DF1E" },
@@ -24,7 +24,7 @@ const technologies = [
   { name: "Tailwind CSS", icon: SiTailwindcss, color: "#06B6D4" },
   { name: "CSS", icon: FaCss3Alt, color: "#1572B6" },
   { name: "HTML", icon: SiHtml5, color: "#E34F26" },
-  { name: "n8n", icon: Workflow, color: "#EA4B71" },
+  { name: "n8n", icon: SiN8N, color: "#EA4B71" },
   { name: "Vite", icon: SiVite, color: "#646CFF" },
   { name: "Jest", icon: SiJest, color: "#C21325" },
   { name: "Vitest", icon: SiVitest, color: "#6E9F18" },
