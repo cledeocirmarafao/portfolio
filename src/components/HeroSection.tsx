@@ -20,7 +20,9 @@ export const HeroSection = () => {
       id="hero"
       className="relative min-h-screen flex items-center overflow-hidden max-w-full pt-20 sm:pt-0 lg:pt-0"
     >
-      <Suspense fallback={null}><Scene3D/></Suspense>
+      <Suspense fallback={null}>
+        <Scene3D />
+      </Suspense>
       <div className="absolute inset-0 grid-pattern opacity-10 pointer-events-none" />
       <div className="absolute inset-0 bg-linear-to-b from-transparent via-background/50 to-background pointer-events-none" />
 
@@ -141,7 +143,7 @@ export const HeroSection = () => {
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
             className="lg:col-span-2 hidden lg:block perspective-midrange"
-           >
+          >
             <motion.div
               className="glass rounded-2xl p-6 border-glow"
               onMouseMove={(e) => {
@@ -171,18 +173,18 @@ export const HeroSection = () => {
                   <span className="text-magenta">const</span>{" "}
                   <span className="text-foreground">developer</span>{" "}
                   <span className="text-muted-foreground">=</span> {"{"}
-                  {"\n"}  <span className="text-cyan">name</span>:{" "}
+                  {"\n"} <span className="text-cyan">name</span>:{" "}
                   <span className="text-green-400">"Cledeocir Marafão"</span>,
-                  {"\n"}  <span className="text-cyan">github</span>:{" "}
+                  {"\n"} <span className="text-cyan">github</span>:{" "}
                   <span className="text-green-400">"@cledeocirmarafao"</span>,
-                  {"\n"}  <span className="text-cyan">skills</span>: [
-                  {"\n"}    <span className="text-green-400">"TypeScript"</span>,
-                  {"\n"}    <span className="text-green-400">"React"</span>,
-                  {"\n"}    <span className="text-green-400">"TailwindCSS"</span>
-                  {"\n"}  ],
-                  {"\n"}  <span className="text-cyan">repos</span>:{" "}
-                  <span className="text-yellow-400">25+</span>,
-                  {"\n"}  <span className="text-cyan">available</span>:{" "}
+                  {"\n"} <span className="text-cyan">skills</span>: [{"\n"}{" "}
+                  <span className="text-green-400">"TypeScript"</span>,{"\n"}{" "}
+                  <span className="text-green-400">"React"</span>,{"\n"}{" "}
+                  <span className="text-green-400">"TailwindCSS"</span>
+                  {"\n"} ],
+                  {"\n"} <span className="text-cyan">repos</span>:{" "}
+                  <span className="text-yellow-400">25+</span>,{"\n"}{" "}
+                  <span className="text-cyan">available</span>:{" "}
                   <span className="text-magenta">true</span>
                   {"\n"}
                   {"}"};
