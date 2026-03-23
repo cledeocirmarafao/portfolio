@@ -45,7 +45,7 @@ export const HardSkillsSection = () => {
     <section
       data-testid="skills-section"
       id="skills"
-      className="py-32 relative overflow-hidden"
+      className="pt-30 relative overflow-hidden"
     >
       <div className="absolute inset-0 grid-pattern opacity-5" />
       <div className="container mx-auto px-6 relative z-10">
