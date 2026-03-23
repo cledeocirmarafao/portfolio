@@ -91,7 +91,7 @@ describe("Navigation", () => {
     expect(screen.getByTestId("nav-mobile-button")).toBeInTheDocument();
   });
 
-  it("deve renderizar o LanfuageToggle", () => {
+  it("deve renderizar o LanguageToggle", () => {
     render(<Navigation />);
     expect(
       screen.getAllByTestId("language-toggle").length,
