@@ -70,6 +70,7 @@ export const SoftSkillsSection = () => {
           <div className="absolute left-0 top-0 bottom-0 w-32 bg-linear-to-r from-background to-transparent z-10 pointer-events-none" />
           <div className="absolute right-0 top-0 bottom-0 w-32 bg-linear-to-l from-background to-transparent z-10 pointer-events-none" />
           <div
+            data-testid="soft-skills-scroll"
             className="flex items-center gap-12 animate-scroll-right"
             style={{
               width: "fit-content",
