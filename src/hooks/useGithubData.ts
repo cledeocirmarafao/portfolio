@@ -13,7 +13,7 @@ export interface ContributionWeek {
 
 const GITHUB_USERNAME = "cledeocirmarafao";
 
-export function useGitHubData() {
+export const useGitHubData = () => {
   const [totalContributions, setTotalContributions] = useState(0);
   const [contributions, setContributions] = useState<ContributionWeek[]>([]);
 
