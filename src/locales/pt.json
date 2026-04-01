@@ -86,27 +86,27 @@
     "badge_role": "Fullstack Jr",
     "badge_open": "Open to Work",
     "badge_location": "Floripa 🏝️",
-    "p1": "Desenvolvedor <1>fullstack júnior</1> apaixonado por criar interfaces elegantes e APIs robustas. Minha jornada começou com a curiosidade de entender como a web funciona.",
-    "p2": "Especializado em <1>React</1> e <1>Node.js</1>, sempre buscando a combinação perfeita entre design e performance. Acredito que bom código é código que resolve problemas reais.",
-    "p3": "Atualmente focado em aprofundar conhecimentos em arquitetura de software e práticas de DevOps. Disponível para projetos freelance e oportunidades full-time em <1>Florianópolis</1>.",
-    "timeline_title": "Trajetória",
-    "timeline": [
-      {
-        "year": "2024",
-        "title": "Fullstack Developer Jr",
-        "description": "Início da jornada profissional em desenvolvimento web"
-      },
-      {
-        "year": "2023",
-        "title": "Bootcamp Fullstack",
-        "description": "Formação intensiva em desenvolvimento web moderno"
-      },
-      {
-        "year": "2022",
-        "title": "Primeiros Projetos",
-        "description": "Primeiros contatos com programação e lógica"
-      }
-    ],
+    "p1": "Olá! Meu nome é <1>Cledeocir Marafão</1>! Sou pai de duas meninas e, após a perda funcional do meu braço direito (CID G54.0) em um acidente automobilístico, encontrei no desenvolvimento de software uma forma poderosa de reconstruir meu caminho.",
+    "p2": "Hoje me especializo no ecossistema JavaScript (<1>React</1>, <1>Node.js</1> e <1>TypeScript</1>). Enquanto isso, aprofundo meus conhecimentos em renderizações 3D, Next.js, Prisma, Docker, integrações e automações com IA e N8n, consolidando minha formação em FullStack.",
+    "p3": "Estou em constante evolução, aprofundando conhecimentos em arquitetura de software e práticas de DevOps. Disponível para projetos freelance, oportunidades full-time em <1>Florianópolis</1> ou remoto.",
+   "timeline_title": "Resumo da minha Trajetória",
+"timeline": [
+  {
+    "year": "2026",
+    "title": "Certificação Frontend Profissional",
+    "description": "Certificado de mais de 80 horas com foco em arquitetura de interfaces, performance e acessibilidade (React, TypeScript, Tailwind CSS e testes automatizados)."
+  },
+  {
+    "year": "2025",
+    "title": "DevQuest – Extensão Universitária Full Stack",
+    "description": "Imersão intensiva: mais de 25 projetos reais (curso + pessoais), aprofundamento em HTML, CSS, JavaScript, React, TypeScript, Tailwind, Jest, Vitest e Redux."
+  },
+  {
+    "year": "2024",
+    "title": "Início na Programação",
+    "description": "Primeiro contato com tecnologia. Início da formação DevQuest e desenvolvimento dos primeiros projetos pessoais com foco em lógica e ecossistema JavaScript."
+  }
+],
     "contributions": "contribuições",
     "contributions_period": "nos últimos 6 meses"
   },
