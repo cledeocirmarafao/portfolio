@@ -15,7 +15,7 @@ export const AboutSection = () => {
   }>;
 
   return (
-    <section id="about" className="py-16 sm:py-32 relative">
+    <section data-testid="about-section" id="about" className="py-16 sm:py-32 relative">
       <div className="container mx-auto px-4 sm:px-6">
         <div className="grid lg:grid-cols-2 gap-10 lg:gap-16">
           <motion.div
@@ -31,6 +31,7 @@ export const AboutSection = () => {
                 transition={{ duration: 0.3 }}
               >
                 <img
+                  data-testid="about-photo"
                   src={profilePhoto}
                   alt={t("about.photo_alt")}
                   className="w-full h-full object-cover"
@@ -38,6 +39,7 @@ export const AboutSection = () => {
               </motion.div>
 
               <motion.div
+                data-testid="about-badge-role"
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
@@ -51,6 +53,7 @@ export const AboutSection = () => {
               </motion.div>
 
               <motion.div
+                data-testid="about-badge-open"
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
@@ -64,6 +67,7 @@ export const AboutSection = () => {
               </motion.div>
 
               <motion.div
+                data-testid="about-badge-location"
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
@@ -96,26 +100,26 @@ export const AboutSection = () => {
               <span className="text-primary font-mono text-sm">
                 {t("about.comment")}
               </span>
-              <h2 className=" text-4xl md:text-5xl font-bold mt-4">
+              <h2 data-testid="about-heading" className=" text-4xl md:text-5xl font-bold mt-4">
                 {t("about.title1")}{" "}
                 <span className="text-gradient">{t("about.title2")}</span>
               </h2>
             </div>
 
             <div className="space-y-4 text-muted-foreground text-lg">
-              <p>
+              <p data-testid="about-p1">
                 <Trans
                   i18nKey="about.p1"
                   components={{ 1: <span className="text-foreground" /> }}
                 />
               </p>
-              <p>
+              <p data-testid="about-p2">
                 <Trans
                   i18nKey="about.p2"
                   components={{ 1: <span className="text-cyan" /> }}
                 />
               </p>
-              <p>
+              <p data-testid="about-p3">
                 <Trans
                   i18nKey="about.p3"
                   components={{ 1: <span className="text-magenta" /> }}
@@ -128,9 +132,10 @@ export const AboutSection = () => {
                 <Calendar className="w-5 h-5 text-primary" />
                 {t("about.timeline_title")}
               </h3>
-              <div className="space-y-4">
+              <div data-testid="about-timeline" className="space-y-4">
                 {timeline.map((item, index) => (
                   <motion.div
+                    data-testid={`timeline-item-${item.year}`}
                     key={item.year}
                     initial={{ opacity: 0, x: -20 }}
                     whileInView={{ opacity: 1, x: 0 }}
