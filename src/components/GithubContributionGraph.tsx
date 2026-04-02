@@ -43,8 +43,8 @@ export const GitHubContributionGraph = ({
     }
   });
 
-  const CELL = 10;
-  const GAP = 3.5;
+  const CELL = 9;
+  const GAP = 3;
   const cellStep = CELL + GAP;
 
   return (
@@ -54,7 +54,7 @@ export const GitHubContributionGraph = ({
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
       transition={{ delay: 0.3 }}
-      className="glass rounded-xl p-3 sm:p-5 border border-border/50 w-fit"
+      className="hidden md:block glass rounded-xl p-3 sm:p-5 border border-border/50 max-w-full overflow-x-auto"
     >
       <div className="mb-4">
         <span
