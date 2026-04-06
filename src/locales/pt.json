@@ -180,5 +180,10 @@
     "less": "Menos",
     "more": "Mais",
     "contributions_on": "contribuições"
+  },
+  "pulse_runner": {
+    "play": "Jogar",
+    "restart": "Reiniciar",
+    "hint": "Clique em iniciar para jogar ou envie-me uma mensagem. Você receberá um boost de 150 pontos ao enviar-me um email."
   }
 }
