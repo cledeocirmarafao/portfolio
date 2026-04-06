@@ -160,7 +160,7 @@ describe("GithubContributionGraph", () => {
       <GitHubContributionGraph weeks={singleWeek} totalContributions={0} />,
     );
     const graph = screen.getByTestId("contribution-graph");
-    const cells = graph.querySelectorAll('[style*="width: 10px"]');
+    const cells = graph.querySelectorAll('[style*="width: 9px"]');
     expect(cells.length).toBeGreaterThanOrEqual(7);
   });
 
