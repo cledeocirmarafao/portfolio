@@ -142,12 +142,12 @@ interface GameInternal {
   flashAlpha: number;
 }
 
-export function usePulseRunnerGame(
+export const usePulseRunnerGame = (
   canvasRef: React.RefObject<HTMLCanvasElement | null>,
   containerRef: React.RefObject<HTMLDivElement | null>,
   boost: boolean,
   disabled: boolean,
-) {
+) => {
   const gameRef = useRef<GameInternal>({
     state: "idle",
     score: 0,
@@ -611,4 +611,4 @@ export function usePulseRunnerGame(
   }, [jump, disabled, displayState]);
 
   return { displayState, displayScore, displayHigh, jump, startGame };
-}
+};
