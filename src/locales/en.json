@@ -115,7 +115,7 @@
     "title1": "Let's",
     "title2": "Work",
     "title3": "Together?",
-    "subtitle": "Have a project in mind or want to discuss opportunities? I'd love to hear from you!",
+    "subtitle": "Got a project in mind or an opportunity to share? I'm available and will get back to you shortly.",
     "label_name": "Name",
     "placeholder_name": "Your name",
     "label_email": "Email",
@@ -131,7 +131,7 @@
   },
   "footer": {
     "description1": "Fullstack Developer Jr.",
-    "description2": "Creating digital experiences.",
+    "description2": "Frontend that delights. Backend that supports.",
     "location": "📍 Florianópolis, Brazil 🇧🇷",
     "quick_links": "Quick Links",
     "social": "Social",
