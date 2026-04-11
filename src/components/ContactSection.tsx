@@ -14,24 +14,28 @@ import { LocationMap } from "./LocationMap";
 
 const socialLinks = [
   {
+    id: "email",
     icon: Mail,
     label: "Email",
     value: "cledeocirms96@gmail.com",
     href: "mailto:cledeocirms96@gmail.com",
   },
   {
+    id: "linkedin",
     icon: Linkedin,
     label: "LinkedIn",
     value: "/in/cledeocirmarafao/",
     href: "https://www.linkedin.com/in/cledeocirmarafao/",
   },
   {
+    id: "github",
     icon: Github,
     label: "GitHub",
     value: "@cledeocirmarafao",
     href: "https://github.com/cledeocirmarafao",
   },
   {
+    id: "whatsapp",
     icon: MessageSquare,
     label: "WhatsApp",
     value: "+55 48 98866-9970",
@@ -50,7 +54,11 @@ export const ContactSection = () => {
   };
 
   return (
-    <section id="contact" className="py-16 md:py-32 relative overflow-hidden">
+    <section
+      id="contact"
+      data-testid="contact-section"
+      className="py-16 md:py-32 relative overflow-hidden"
+    >
       <div className="absolute inset-0 grid-pattern opacity-5" />
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-64 h-64 md:w-96 md:h-96 bg-primary/10 rounded-full blur-3xl" />
 
@@ -62,15 +70,24 @@ export const ContactSection = () => {
           transition={{ duration: 0.6 }}
           className="text-center mb-12 md:mb-20"
         >
-          <span className="text-primary font-mono text-xs sm:text-sm">
+          <span
+            data-testid="contact-comment"
+            className="text-primary font-mono text-xs sm:text-sm"
+          >
             {t("contact.comment")}
           </span>
-          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mt-4">
+          <h2
+            data-testid="contact-heading"
+            className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mt-4"
+          >
             {t("contact.title1")}{" "}
             <span className="text-gradient">{t("contact.title2")}</span>{" "}
             {t("contact.title3")}
           </h2>
-          <p className="text-muted-foreground mt-4 text-sm sm:text-base">
+          <p
+            data-testid="contact-subtitle"
+            className="text-muted-foreground mt-4 text-sm sm:text-base"
+          >
             {t("contact.subtitle")}
           </p>
         </motion.div>
@@ -97,6 +114,7 @@ export const ContactSection = () => {
               return (
                 <motion.div
                   key={link.label}
+                  data-testid={`contact-social-item-${link.id}`}
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
@@ -104,6 +122,7 @@ export const ContactSection = () => {
                   className="glass rounded-xl p-3 sm:p-6 flex flex-row items-center justify-between group hover:border-primary/30 transition-all card-hover gap-2 sm:gap-3"
                 >
                   <a
+                    data-testid={`contact-social-link-${link.id}`}
                     href={link.href}
                     target="_blank"
                     rel="noopener noreferrer"
@@ -122,6 +141,7 @@ export const ContactSection = () => {
                     </div>
                   </a>
                   <button
+                    data-testid={`contact-copy-btn-${link.id}`}
                     onClick={() => handleCopy(link.value, i)}
                     className="p-2 rounded-lg hover:bg-muted transition-colors"
                   >
