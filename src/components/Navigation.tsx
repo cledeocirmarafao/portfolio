@@ -84,7 +84,7 @@ export const Navigation = () => {
         transition={{ duration: 0.3, ease: "easeInOut" }}
         className={`fixed top-0 left-0 right-0 z-40 transition-all duration-300 ${isScrolled ? "glass-strong py-3" : "py-6"}`}
       >
-        <div className="container mx-auto flex items-center justify-between">
+        <div className="container mx-auto px-4 sm:px-6 flex items-center justify-between">
           <motion.a
             data-testid="nav-logo"
             href="#hero"

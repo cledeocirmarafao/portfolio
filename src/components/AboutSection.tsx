@@ -17,7 +17,7 @@ export const AboutSection = () => {
   return (
     <section data-testid="about-section" id="about" className="py-16 sm:py-32 relative">
       <div className="container mx-auto px-4 sm:px-6">
-        <div className="grid lg:grid-cols-2 gap-10 lg:gap-16">
+        <div className="flex flex-col-reverse lg:grid lg:grid-cols-2 gap-10 lg:gap-16">
           <motion.div
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -96,11 +96,11 @@ export const AboutSection = () => {
             transition={{ duration: 0.8 }}
             className="space-y-8"
           >
-            <div>
+            <div className="text-center md:text-left">
               <span className="text-primary font-mono text-sm">
                 {t("about.comment")}
               </span>
-              <h2 data-testid="about-heading" className=" text-4xl md:text-5xl font-bold mt-4">
+              <h2 data-testid="about-heading" className="text-4xl md:text-5xl font-bold mt-4">
                 {t("about.title1")}{" "}
                 <span className="text-gradient">{t("about.title2")}</span>
               </h2>

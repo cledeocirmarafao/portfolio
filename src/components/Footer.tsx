@@ -149,13 +149,13 @@ export const Footer = () => {
         <div className="pt-8 border-t border-border/50 flex flex-col md:flex-row items-center justify-between gap-4">
           <p
             data-testid="footer-copyright"
-            className="text-sm text-muted-foreground flex items-center gap-1 flex-wrap justify-center"
+            className="text-xs sm:text-sm text-muted-foreground flex items-center gap-1 flex-wrap justify-center"
           >
             {t("footer.copyright")}
-            <Heart className="w-4 h-4 text-secondary fill-secondary" />
-            {t("footer.and")}
-            <Coffee className="w-4 h-4 text-primary" />
-            {t("footer.in_floripa")}
+            <Heart className="w-3 h-3 sm:w-4 sm:h-4 text-secondary fill-secondary shrink-0" />
+            <span className="whitespace-nowrap">{t("footer.and")}</span>
+            <Coffee className="w-3 h-3 sm:w-4 sm:h-4 text-primary shrink-0" />
+            <span className="whitespace-nowrap">{t("footer.in_floripa")}</span>
           </p>
           <motion.button
             data-testid="footer-scroll-top"

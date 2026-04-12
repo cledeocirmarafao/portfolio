@@ -86,7 +86,7 @@ export const ProjectsSection = () => {
     <section
       data-testid="projects-section"
       id="projects"
-      className="py-32 relative"
+      className="py-16 md:py-32 relative"
     >
       <div className="container mx-auto px-6">
         <motion.div
@@ -283,9 +283,9 @@ export const ProjectsSection = () => {
             rel="noopener noreferrer"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-            className="group flex items-center gap-3 px-8 py-4 glass rounded-full border border-border hover:border-primary/50 transition-colors"
+            className="group flex items-center gap-2 sm:gap-3 px-4 sm:px-8 py-3 sm:py-4 glass rounded-full border border-border hover:border-primary/50 transition-colors text-sm sm:text-base"
           >
-            <Github className="w-5 h-5 text-foreground/80 group-hover:text-primary transition-colors" />
+            <Github className="w-4 h-4 sm:w-5 sm:h-5 text-foreground/80 group-hover:text-primary transition-colors" />
             <span className="text-foreground/80 group-hover:text-primary font-medium transition-colors">
               {t("projects.see_more_github")}
             </span>
