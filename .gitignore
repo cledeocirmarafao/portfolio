@@ -31,3 +31,5 @@ dist-ssr
 
 vitest.results.json
 **/results.json
+
+server/.env
