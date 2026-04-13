@@ -9,74 +9,69 @@
   --radius-lg: var(--radius);
   --radius-xl: calc(var(--radius) + 4px);
 
-  --color-background:         var(--background);
-  --color-foreground:         var(--foreground);
-  --color-card:               var(--card);
-  --color-card-foreground:    var(--card-foreground);
-  --color-popover:            var(--popover);
-  --color-popover-foreground: var(--popover-foreground);
-  --color-primary:            var(--primary);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-primary: var(--primary);
   --color-primary-foreground: var(--primary-foreground);
-  --color-secondary:          var(--secondary);
+  --color-secondary: var(--secondary);
   --color-secondary-foreground: var(--secondary-foreground);
-  --color-muted:              var(--muted);
-  --color-muted-foreground:   var(--muted-foreground);
-  --color-accent:             var(--accent);
-  --color-accent-foreground:  var(--accent-foreground);
-  --color-destructive:        var(--destructive);
-  --color-border:             var(--border);
-  --color-input:              var(--input);
-  --color-ring:               var(--ring);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
 
-  --color-cyan:               var(--cyan);
-  --color-magenta:            var(--magenta);
-  --color-surface:            var(--surface);
-  --color-surface-light:      var(--surface-light);
+  --color-cyan: var(--cyan);
+  --color-magenta: var(--magenta);
 
-  --background-image-cyber-gradient: linear-gradient(90deg, var(--cyan) 0%, var(--magenta) 100%);
-
+  --background-image-cyber-gradient: linear-gradient(
+    90deg,
+    var(--cyan) 0%,
+    var(--magenta) 100%
+  );
 }
 
-/* ─── Cyberpunk Dark Theme ─────────────────────────────── */
 :root {
   --radius: 0.75rem;
 
-  --background:    oklch(0.10 0.02 264);
-  --foreground:    oklch(0.88 0.01 264);
+  --background: oklch(0.1 0.02 264);
+  --foreground: oklch(0.88 0.01 264);
 
-  --card:          oklch(0.13 0.025 264);
+  --card: oklch(0.13 0.025 264);
   --card-foreground: oklch(0.88 0.01 264);
 
-  --popover:       oklch(0.13 0.025 264);
-  --popover-foreground: oklch(0.88 0.01 264);
+  --primary: oklch(0.8 0.18 195); /* cyan */
+  --primary-foreground: oklch(0.1 0.02 264);
 
-  --primary:       oklch(0.80 0.18 195);   /* cyan */
-  --primary-foreground: oklch(0.10 0.02 264);
-
-  --secondary:     oklch(0.65 0.28 330);   /* magenta */
+  --secondary: oklch(0.65 0.28 330); /* magenta */
   --secondary-foreground: oklch(1 0 0);
 
-  --muted:         oklch(0.20 0.02 264);
-  --muted-foreground: oklch(0.60 0.02 264);
+  --muted: oklch(0.2 0.02 264);
+  --muted-foreground: oklch(0.6 0.02 264);
 
-  --accent:        oklch(0.80 0.18 195);
-  --accent-foreground: oklch(0.10 0.02 264);
+  --accent: oklch(0.8 0.18 195);
+  --accent-foreground: oklch(0.1 0.02 264);
 
-  --destructive:   oklch(0.60 0.22 27);
+  --destructive: oklch(0.6 0.22 27);
 
-  --border:        oklch(0.25 0.02 264);
-  --input:         oklch(0.25 0.02 264);
-  --ring:          oklch(0.80 0.18 195);
+  --border: oklch(0.25 0.02 264);
+  --input: oklch(0.25 0.02 264);
+  --ring: oklch(0.8 0.18 195);
 
-  /* Custom tokens */
-  --cyan:          oklch(0.80 0.18 195);
-  --magenta:       oklch(0.65 0.28 330);
-  --surface:       oklch(0.14 0.025 264);
-  --surface-light: oklch(0.20 0.02 264);
+  --cyan: oklch(0.8 0.18 195);
+  --magenta: oklch(0.65 0.28 330);
 }
 
-/* ─── Base styles ──────────────────────────────────────── */
 @layer base {
+  html {
+    overflow-x: hidden;
+  }
+
   * {
     border-color: var(--border);
   }
@@ -84,17 +79,26 @@
   body {
     background-color: var(--background);
     color: var(--foreground);
-    font-family: 'Inter', sans-serif;
+    font-family: "Outfit", sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
   }
 
-  h1, h2, h3, h4, h5, h6, span {
-    font-family: 'Space Grotesk', sans-serif;
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  span,
+  a {
+    font-family: "Space Grotesk", sans-serif;
   }
 
-  code, pre {
-    font-family: 'Fira Code', monospace;
+  code,
+  pre {
+    font-family: "Fira Code", monospace;
   }
 
   ::selection {
@@ -103,8 +107,12 @@
   }
 
   /* Scrollbar */
-  ::-webkit-scrollbar       { width: 6px; }
-  ::-webkit-scrollbar-track { background: var(--background); }
+  ::-webkit-scrollbar {
+    width: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    background: var(--background);
+  }
   ::-webkit-scrollbar-thumb {
     background: var(--muted);
     border-radius: 4px;
@@ -114,9 +122,7 @@
   }
 }
 
-/* ─── Component utilities ──────────────────────────────── */
 @layer components {
-  /* Glassmorphism */
   .glass {
     backdrop-filter: blur(16px);
     background-color: oklch(from var(--card) l c h / 0.6);
@@ -129,30 +135,17 @@
     border: 1px solid oklch(from var(--border) l c h / 0.6);
   }
 
-  /* Neon text */
-  .text-glow-cyan {
-    text-shadow:
-      0 0 10px oklch(from var(--cyan) l c h / 0.8),
-      0 0 20px oklch(from var(--cyan) l c h / 0.5),
-      0 0 40px oklch(from var(--cyan) l c h / 0.3);
-  }
-
-  .text-glow-magenta {
-    text-shadow:
-      0 0 10px oklch(from var(--magenta) l c h / 0.8),
-      0 0 20px oklch(from var(--magenta) l c h / 0.5),
-      0 0 40px oklch(from var(--magenta) l c h / 0.3);
-  }
-
-  /* Gradient text */
   .text-gradient {
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    background-image: linear-gradient(135deg, var(--cyan) 0%, var(--magenta) 100%);
+    background-image: linear-gradient(
+      135deg,
+      var(--cyan) 0%,
+      var(--magenta) 100%
+    );
   }
 
-  /* Glowing borders */
   .border-glow {
     box-shadow:
       0 0 15px oklch(from var(--cyan) l c h / 0.3),
@@ -165,10 +158,11 @@
       inset 0 0 15px oklch(from var(--magenta) l c h / 0.1);
   }
 
-  /* Animated underline */
-  .link-underline { position: relative; }
+  .link-underline {
+    position: relative;
+  }
   .link-underline::after {
-    content: '';
+    content: "";
     position: absolute;
     bottom: 0;
     left: 0;
@@ -177,35 +171,28 @@
     background: linear-gradient(90deg, var(--primary), var(--secondary));
     transition: width 300ms ease;
   }
-  .link-underline:hover::after { width: 100%; }
-
-  /* Scanlines */
-  .scanlines::before {
-    content: '';
-    position: absolute;
-    inset: 0;
-    pointer-events: none;
-    z-index: 50;
-    background: repeating-linear-gradient(
-      0deg,
-      transparent,
-      transparent 2px,
-      oklch(from var(--background) l c h / 0.03) 2px,
-      oklch(from var(--background) l c h / 0.03) 4px
-    );
+  .link-underline:hover::after {
+    width: 100%;
   }
 
-  /* Grid pattern */
   .grid-pattern {
     background-image:
-      linear-gradient(oklch(from var(--border) l c h / 0.3) 1px, transparent 1px),
-      linear-gradient(90deg, oklch(from var(--border) l c h / 0.3) 1px, transparent 1px);
+      linear-gradient(
+        oklch(from var(--border) l c h / 0.3) 1px,
+        transparent 1px
+      ),
+      linear-gradient(
+        90deg,
+        oklch(from var(--border) l c h / 0.3) 1px,
+        transparent 1px
+      );
     background-size: 50px 50px;
   }
 
-  /* Card hover */
   .card-hover {
-    transition: transform 300ms ease, box-shadow 300ms ease;
+    transition:
+      transform 300ms ease,
+      box-shadow 300ms ease;
   }
   .card-hover:hover {
     transform: translateY(-8px);
@@ -215,48 +202,59 @@
   }
 }
 
-/* ─── Keyframes ────────────────────────────────────────── */
-@keyframes glitch {
-  0%, 100% { transform: translate(0); }
-  20%       { transform: translate(-2px,  2px); }
-  40%       { transform: translate(-2px, -2px); }
-  60%       { transform: translate( 2px,  2px); }
-  80%       { transform: translate( 2px, -2px); }
-}
-
 @keyframes pulse-glow {
-  0%, 100% { box-shadow: 0 0 20px oklch(from var(--cyan) l c h / 0.4); }
-  50%       { box-shadow: 0 0 40px oklch(from var(--cyan) l c h / 0.6),
-                          0 0 60px oklch(from var(--cyan) l c h / 0.3); }
-}
-
-@keyframes float {
-  0%, 100% { transform: translateY(0px); }
-  50%       { transform: translateY(-20px); }
+  0%,
+  100% {
+    box-shadow: 0 0 20px oklch(from var(--cyan) l c h / 0.4);
+  }
+  50% {
+    box-shadow:
+      0 0 40px oklch(from var(--cyan) l c h / 0.6),
+      0 0 60px oklch(from var(--cyan) l c h / 0.3);
+  }
 }
 
 @keyframes blink {
-  0%, 50%   { opacity: 1; }
-  51%, 100% { opacity: 0; }
+  0%,
+  50% {
+    opacity: 1;
+  }
+  51%,
+  100% {
+    opacity: 0;
+  }
 }
 
-@keyframes fill-progress {
-  from { width: 0%; }
+@keyframes scroll-left {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-33.333%);
+  }
 }
 
-/* ─── Animation utilities ──────────────────────────────── */
+@keyframes scroll-right {
+  from {
+    transform: translateX(-33.333%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
 @layer utilities {
-  .glitch        { animation: glitch        0.3s ease-in-out infinite; }
-  .pulse-glow    { animation: pulse-glow    2s   ease-in-out infinite; }
-  .float         { animation: float         6s   ease-in-out infinite; }
-  .cursor-blink  { animation: blink         1s   infinite; }
-  .progress-animate { animation: fill-progress 1.5s ease-out forwards; }
+  .pulse-glow {
+    animation: pulse-glow 2s ease-in-out infinite;
+  }
+  .cursor-blink {
+    animation: blink 1s infinite;
+  }
 
-  .text-balance  { text-wrap: balance; }
-
-  .delay-100 { animation-delay: 100ms; }
-  .delay-200 { animation-delay: 200ms; }
-  .delay-300 { animation-delay: 300ms; }
-  .delay-400 { animation-delay: 400ms; }
-  .delay-500 { animation-delay: 500ms; }
+  .animate-scroll-left {
+    animation: scroll-left 45s linear infinite;
+  }
+  .animate-scroll-right {
+    animation: scroll-right 45s linear infinite;
+  }
 }
