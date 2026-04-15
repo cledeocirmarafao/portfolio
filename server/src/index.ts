@@ -11,10 +11,12 @@ const app = new Hono();
 app.use(
   "/*",
   cors({
-    origin: ["http://localhost:5173"],
+    origin: ["http://localhost:5173", process.env.FRONTEND_URL ?? ""].filter(
+      Boolean,
+    ),
     allowMethods: ["POST", "GET", "OPTIONS"],
     allowHeaders: ["Content-Type"],
-  })
+  }),
 );
 
 app.route("/api/chat", chat);
@@ -26,4 +28,4 @@ serve({
   port: Number(process.env.PORT ?? 3001),
 });
 
-console.log("Server rodando em http://localhost:3001");
+console.log(`Server rodando na porta ${process.env.PORT ?? 3001}`);
