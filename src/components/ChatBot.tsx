@@ -4,6 +4,7 @@ import { X, Send, Sparkles } from "lucide-react";
 import { Button } from "./ui/Button";
 import { useTranslation } from "react-i18next";
 import chatbotAvatar from "../assets/bot.webp";
+import ReactMarkdown from "react-markdown";
 
 interface Message {
   id: string;
@@ -204,7 +205,44 @@ export const ChatBot = () => {
                   <div
                     className={`max-w-[80%] px-3 py-2 rounded-xl text-sm leading-relaxed ${msg.sender === "user" ? "bg-primary/20 text-foreground border border-primary/30" : "bg-muted/50 text-foreground border border-border/30"}`}
                   >
-                    {msg.text}
+                    {msg.sender === "bot" ? (
+                      <ReactMarkdown
+                        components={{
+                          a: ({ href, children }) => (
+                            <a
+                              href={href}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="text-cyan-400 underline hover:text-cyan-300"
+                            >
+                              {children}
+                            </a>
+                          ),
+                          strong: ({ children }) => (
+                            <strong className="text-foreground font-semibold">
+                              {children}
+                            </strong>
+                          ),
+                          ul: ({ children }) => (
+                            <ul className="list-disc list-inside space-y-1 my-1">
+                              {children}
+                            </ul>
+                          ),
+                          li: ({ children }) => (
+                            <li className="text-sm">{children}</li>
+                          ),
+                          h3: ({ children }) => (
+                            <h3 className="font-bold text-primary text-sm mt-2 mb-1">
+                              {children}
+                            </h3>
+                          ),
+                        }}
+                      >
+                        {msg.text}
+                      </ReactMarkdown>
+                    ) : (
+                      msg.text
+                    )}
                   </div>
                 </motion.div>
               ))}
