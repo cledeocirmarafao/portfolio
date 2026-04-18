@@ -58,29 +58,30 @@ export const Index = () => {
     <>
       {showIntro && <IntroAnimation onComplete={handleIntroComplete} />}
 
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: contentReady ? 1 : 0 }}
-        transition={{ duration: 0.5 }}
-        className="relative"
-        aria-hidden={!contentReady}
-      >
-        <Navigation />
-        <main>
-          <HeroSection />
+      {contentReady && (
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.5 }}
+          className="relative"
+        >
+          <Navigation />
+          <main>
+            <HeroSection />
+            <Suspense fallback={null}>
+              <ProjectsSection />
+              <SkillsSection />
+              <SoftSkillsSection />
+              <AboutSection />
+              <ContactSection />
+            </Suspense>
+          </main>
           <Suspense fallback={null}>
-            <ProjectsSection />
-            <SkillsSection />
-            <SoftSkillsSection />
-            <AboutSection />
-            <ContactSection />
+            <Footer />
+            <ChatBot />
           </Suspense>
-        </main>
-        <Suspense fallback={null}>
-          <Footer />
-          <ChatBot />
-        </Suspense>
-      </motion.div>
+        </motion.div>
+      )}
     </>
   );
 };
