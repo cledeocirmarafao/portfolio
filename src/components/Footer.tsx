@@ -160,7 +160,7 @@ export const Footer = () => {
           <motion.button
             data-testid="footer-scroll-top"
             onClick={scrollToTop}
-            className="w-10 h-10 rounded-xl glass flex items-center justify-center text-primary hover:bg-primary/10 transition-all cursor-pointer"
+            className="w-10 h-10 -translate-x-20 max-sm:translate-x-0 rounded-xl glass flex items-center justify-center text-primary hover:bg-primary/10 transition-all cursor-pointer"
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.95 }}
           >
