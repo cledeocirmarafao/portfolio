@@ -51,14 +51,14 @@
         "description": "Team-developed cat adoption platform focused on connecting pets with their forever homes."
       }
     ]
-},
+  },
   "skills": {
     "comment": "//Hard Skills",
     "title1": "Technical",
     "title2": "Arsenal",
     "hint": "< Hover to explore >"
   },
-   "soft_skills": {
+  "soft_skills": {
     "comment": "// Beyond the Code",
     "title1": "Interpersonal",
     "title2": "Skills",
@@ -92,19 +92,19 @@
     "timeline_title": "Journey",
     "timeline": [
       {
+        "year": "2026",
+        "title": "Professional Frontend Certification",
+        "description": "Certificate with over 80 hours of training focusing on interface architecture, performance, and accessibility (React, TypeScript, Tailwind CSS, and automated testing)."
+      },
+      {
+        "year": "2025",
+        "title": "DevQuest – Full Stack University Extension",
+        "description": "Intensive immersion: more than 25 real-world projects (course + personal), in-depth study of HTML, CSS, JavaScript, React, TypeScript, Tailwind, Jest, Vitest, and Redux."
+      },
+      {
         "year": "2024",
-        "title": "Fullstack Developer Jr",
-        "description": "Start of professional journey in web development"
-      },
-      {
-        "year": "2023",
-        "title": "Fullstack Bootcamp",
-        "description": "Intensive training in modern web development"
-      },
-      {
-        "year": "2022",
-        "title": "First Projects",
-        "description": "First contacts with programming and logic"
+        "title": "Home in Programming",
+        "description": "First contact with technology. Beginning of DevQuest training and development of the first personal projects focusing on logic and the JavaScript ecosystem."
       }
     ],
     "contributions": "contributions",
