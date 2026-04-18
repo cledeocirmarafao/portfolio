@@ -148,9 +148,9 @@ describe("IntroAnimation", () => {
     expect(screen.getByTestId("terminal-text")).toHaveTextContent("Bem-vindo");
   });
 
-  it('deve chamar onComplete após todos os stages', () => {
-    const onComplete = vi.fn()
-    render(<IntroAnimation onComplete={onComplete}/>)
+  it("deve chamar onComplete após todos os stages", () => {
+    const onComplete = vi.fn();
+    render(<IntroAnimation onComplete={onComplete} />);
 
     act(() => {
       vi.advanceTimersByTime(900);
@@ -163,20 +163,20 @@ describe("IntroAnimation", () => {
       vi.advanceTimersByTime(800);
     });
     act(() => vi.advanceTimersByTime(700));
-    expect(onComplete).toHaveBeenCalledTimes(1)
-  })
+    expect(onComplete).toHaveBeenCalledTimes(1);
+  });
 
-  it('deve ter aria-hidden nas camadas de glitch', () => {
-    const onComplete = vi.fn()
-    const { container } = render(<IntroAnimation onComplete={onComplete}/>)
-    const hiddenElements = container.querySelectorAll('[aria-hidden="true"]')
-    expect(hiddenElements.length).toBeGreaterThanOrEqual(2)
-  })
+  it("deve ter aria-hidden nas camadas de glitch", () => {
+    const onComplete = vi.fn();
+    const { container } = render(<IntroAnimation onComplete={onComplete} />);
+    const hiddenElements = container.querySelectorAll('[aria-hidden="true"]');
+    expect(hiddenElements.length).toBeGreaterThanOrEqual(2);
+  });
 
-  it('deve ter apenas um h1 na página', () => {
-    const onComplete = vi.fn()
-    render(<IntroAnimation onComplete={onComplete}/>)
-    const headings = screen.getAllByRole('heading', { level: 1})
-    expect(headings).toHaveLength(1)
-  })
+  it("deve ter apenas um h1 na página", () => {
+    const onComplete = vi.fn();
+    render(<IntroAnimation onComplete={onComplete} />);
+    const headings = screen.getAllByRole("heading", { level: 1 });
+    expect(headings).toHaveLength(1);
+  });
 });

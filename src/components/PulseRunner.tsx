@@ -46,11 +46,12 @@ export const PulseRunner = ({
             </span>
           </div>
           <div className="flex items-center gap-4 font-mono text-xs">
-            <span
-              className="text-muted-foreground"
-            >
+            <span className="text-muted-foreground">
               Score:{" "}
-              <span data-testid="pulse-runner-score" className="text-foreground font-bold">
+              <span
+                data-testid="pulse-runner-score"
+                className="text-foreground font-bold"
+              >
                 {String(displayScore).padStart(5, "0")}
               </span>
             </span>

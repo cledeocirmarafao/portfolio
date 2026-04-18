@@ -109,7 +109,9 @@ export const IntroAnimation = ({ onComplete }: IntroAnimationProps) => {
                 data-testid="terminal-stage"
               >
                 <span className="text-primary">{">"}</span>{" "}
-                <span data-testid="terminal-text">{stages[currentStage].text}</span>
+                <span data-testid="terminal-text">
+                  {stages[currentStage].text}
+                </span>
                 <span className="cursor-blink"> |</span>
               </motion.div>
             )}

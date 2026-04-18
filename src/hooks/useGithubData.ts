@@ -98,4 +98,4 @@ export const useGitHubData = () => {
   }, []);
 
   return { totalContributions, contributions };
-}
+};

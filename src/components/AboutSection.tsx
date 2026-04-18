@@ -15,7 +15,11 @@ export const AboutSection = () => {
   }>;
 
   return (
-    <section data-testid="about-section" id="about" className="py-16 sm:py-32 relative">
+    <section
+      data-testid="about-section"
+      id="about"
+      className="py-16 sm:py-32 relative"
+    >
       <div className="container mx-auto px-4 sm:px-6">
         <div className="flex flex-col-reverse lg:grid lg:grid-cols-2 gap-10 lg:gap-16">
           <motion.div
@@ -100,7 +104,10 @@ export const AboutSection = () => {
               <span className="text-primary font-mono text-sm">
                 {t("about.comment")}
               </span>
-              <h2 data-testid="about-heading" className="text-4xl md:text-5xl font-bold mt-4">
+              <h2
+                data-testid="about-heading"
+                className="text-4xl md:text-5xl font-bold mt-4"
+              >
                 {t("about.title1")}{" "}
                 <span className="text-gradient">{t("about.title2")}</span>
               </h2>

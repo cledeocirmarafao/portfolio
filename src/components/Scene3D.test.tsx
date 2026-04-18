@@ -25,34 +25,34 @@ vi.mock("three", () => ({
   },
 }));
 
-describe('Scene3D', () => {
-    it('deve rendrizar sem quebrar', () => {
-        render(<Scene3D/>)
-        expect(document.body).toBeTruthy()
-    })
+describe("Scene3D", () => {
+  it("deve rendrizar sem quebrar", () => {
+    render(<Scene3D />);
+    expect(document.body).toBeTruthy();
+  });
 
-    it('deve renderizar o container', () => {
-        render(<Scene3D/>)
-        expect(screen.getByTestId('scene3d-container')).toBeInTheDocument()
-    })
+  it("deve renderizar o container", () => {
+    render(<Scene3D />);
+    expect(screen.getByTestId("scene3d-container")).toBeInTheDocument();
+  });
 
-    it('deve renderizar o canvas', () => {
-        render(<Scene3D/>)
-        expect(screen.getByTestId('scene3d-canvas')).toBeInTheDocument()
-    })
+  it("deve renderizar o canvas", () => {
+    render(<Scene3D />);
+    expect(screen.getByTestId("scene3d-canvas")).toBeInTheDocument();
+  });
 
-    it('deve ter as classes corretas no container', () => {
-        render(<Scene3D/>)
-        const container = screen.getByTestId('scene3d-container')
-        expect(container).toHaveClass('absolute')
-        expect(container).toHaveClass('inset-0')
-        expect(container).toHaveClass('-z-10')
-    })
+  it("deve ter as classes corretas no container", () => {
+    render(<Scene3D />);
+    const container = screen.getByTestId("scene3d-container");
+    expect(container).toHaveClass("absolute");
+    expect(container).toHaveClass("inset-0");
+    expect(container).toHaveClass("-z-10");
+  });
 
-    it('o canvas deve estar dentro do container', () => {
-        render(<Scene3D/>)
-        const container = screen.getByTestId('scene3d-container')
-        const canvas = screen.getByTestId('scene3d-canvas')
-        expect(container).toContainElement(canvas)
-    })
-})
+  it("o canvas deve estar dentro do container", () => {
+    render(<Scene3D />);
+    const container = screen.getByTestId("scene3d-container");
+    const canvas = screen.getByTestId("scene3d-canvas");
+    expect(container).toContainElement(canvas);
+  });
+});
