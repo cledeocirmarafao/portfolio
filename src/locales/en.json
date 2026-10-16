@@ -93,6 +93,11 @@
     "timeline": [
       {
         "year": "2026",
+        "title": "Professional Backend Certification",
+        "description": "Certificate with over 20 hours with theoretical and practical backend programming classes (HTTP, Node.js, Express, SQL, PostgreSQL, Prisma, and Docker)."
+      },
+      {
+        "year": "2026",
         "title": "Professional Frontend Certification",
         "description": "Certificate with over 80 hours of training focusing on interface architecture, performance, and accessibility (React, TypeScript, Tailwind CSS, and automated testing)."
       },
@@ -103,7 +108,7 @@
       },
       {
         "year": "2024",
-        "title": "Home in Programming",
+        "title": "Getting Started in Programming",
         "description": "First contact with technology. Beginning of DevQuest training and development of the first personal projects focusing on logic and the JavaScript ecosystem."
       }
     ],

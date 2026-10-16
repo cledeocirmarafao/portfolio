@@ -25,6 +25,12 @@ vi.mock("react-i18next", () => ({
         "about.timeline": [
           {
             year: "2026",
+            title: "Certificação Backend Profissional",
+            description:
+              "Certificado de mais de 20 horas com aulas teóricas e práticas de programação backend (HTTP, Node.js, Express, SQL, PostgreSQL, Prisma e Docker).",
+          },
+          {
+            year: "2026",
             title: "Certificação Frontend Profissional",
             description:
               "Certificado de mais de 80 horas com foco em arquitetura de interfaces, performance e acessibilidade (React, TypeScript, Tailwind CSS e testes automatizados).",
@@ -149,17 +155,19 @@ describe("AboutSection", () => {
     expect(heading).toHaveTextContent("Resumo da minha Trajetória");
   });
 
-  it("deve renderizar os três itens da timeline", () => {
+  it("deve renderizar os quatro itens da timeline", () => {
     render(<AboutSection />);
-    expect(screen.getByTestId("timeline-item-2026")).toBeInTheDocument();
-    expect(screen.getByTestId("timeline-item-2025")).toBeInTheDocument();
-    expect(screen.getByTestId("timeline-item-2024")).toBeInTheDocument();
+    expect(screen.getByTestId("timeline-item-0")).toBeInTheDocument();
+    expect(screen.getByTestId("timeline-item-1")).toBeInTheDocument();
+    expect(screen.getByTestId("timeline-item-2")).toBeInTheDocument();
+    expect(screen.getByTestId("timeline-item-3")).toBeInTheDocument();
   });
 
   it("deve renderizar o título correto de cada timeline", () => {
     render(<AboutSection />);
     const timelines = screen.getByTestId("about-timeline");
-    expect(timelines);
+    expect(timelines).toHaveTextContent("Certificação Backend Profissional");
+    expect(timelines).toHaveTextContent("Certificação Frontend Profissional");
     expect(timelines).toHaveTextContent(
       "DevQuest – Extensão Universitária Full Stack",
     );
@@ -168,13 +176,16 @@ describe("AboutSection", () => {
 
   it("deve renderizar o conteúdo correto dos itens da timeline", () => {
     render(<AboutSection />);
-    expect(screen.getByTestId("timeline-item-2026")).toHaveTextContent(
+    expect(screen.getByTestId("timeline-item-0")).toHaveTextContent(
+      "Certificado de mais de 20 horas com aulas teóricas e práticas de programação backend (HTTP, Node.js, Express, SQL, PostgreSQL, Prisma e Docker).",
+    );
+    expect(screen.getByTestId("timeline-item-1")).toHaveTextContent(
       "Certificado de mais de 80 horas com foco em arquitetura de interfaces, performance e acessibilidade (React, TypeScript, Tailwind CSS e testes automatizados).",
     );
-    expect(screen.getByTestId("timeline-item-2025")).toHaveTextContent(
+    expect(screen.getByTestId("timeline-item-2")).toHaveTextContent(
       "Imersão intensiva: mais de 25 projetos reais (curso + pessoais), aprofundamento em HTML, CSS, JavaScript, React, TypeScript, Tailwind, Jest, Vitest e Redux.",
     );
-    expect(screen.getByTestId("timeline-item-2024")).toHaveTextContent(
+    expect(screen.getByTestId("timeline-item-3")).toHaveTextContent(
       "Primeiro contato com tecnologia. Início da formação DevQuest e desenvolvimento dos primeiros projetos pessoais com foco em lógica e ecossistema JavaScript.",
     );
   });

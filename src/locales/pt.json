@@ -91,6 +91,11 @@
     "p3": "Estou em constante evolução, aprofundando conhecimentos em arquitetura de software e práticas de DevOps. Disponível para projetos freelance, oportunidades full-time em <1>Florianópolis</1> ou remoto.",
     "timeline_title": "Resumo da minha Trajetória",
     "timeline": [
+       {
+        "year": "2026",
+        "title": "Certificação Backend Profissional",
+        "description": "Certificado de mais de 20 horas com aulas teóricas e práticas de programação backend (HTTP, Node.js, Express, SQL, PostgreSQL, Prisma e Docker)."
+      },
       {
         "year": "2026",
         "title": "Certificação Frontend Profissional",

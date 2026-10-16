@@ -14,6 +14,15 @@ export const AboutSection = () => {
     description: string;
   }>;
 
+  const yearOrder = Array.from(new Set(timeline.map((item) => item.year)));
+
+  const yearColor = (year: string) => {
+    const i = yearOrder.indexOf(year);
+    if (i === 0) return "text-cyan";
+    if (i === 1) return "text-magenta";
+    return "text-muted-foreground";
+  };
+
   return (
     <section
       data-testid="about-section"
@@ -142,8 +151,8 @@ export const AboutSection = () => {
               <div data-testid="about-timeline" className="space-y-4">
                 {timeline.map((item, index) => (
                   <motion.div
-                    data-testid={`timeline-item-${item.year}`}
-                    key={item.year}
+                    data-testid={`timeline-item-${index}`}
+                    key={`${item.year}-${index}`}
                     initial={{ opacity: 0, x: -20 }}
                     whileInView={{ opacity: 1, x: 0 }}
                     viewport={{ once: true }}
@@ -152,7 +161,7 @@ export const AboutSection = () => {
                   >
                     <div className="shrink-0 w-16">
                       <span
-                        className={`font-mono text-sm ${index === 0 ? "text-cyan" : index === 1 ? "text-magenta" : "text-muted-foreground"}`}
+                        className={`font-mono text-sm ${index % 2 === 0 ? "text-magenta" : "text-cyan"}`}
                       >
                         {item.year}
                       </span>
