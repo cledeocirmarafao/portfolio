@@ -14,15 +14,6 @@ export const AboutSection = () => {
     description: string;
   }>;
 
-  const yearOrder = Array.from(new Set(timeline.map((item) => item.year)));
-
-  const yearColor = (year: string) => {
-    const i = yearOrder.indexOf(year);
-    if (i === 0) return "text-cyan";
-    if (i === 1) return "text-magenta";
-    return "text-muted-foreground";
-  };
-
   return (
     <section
       data-testid="about-section"
